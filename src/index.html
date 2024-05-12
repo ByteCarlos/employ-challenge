@@ -32,16 +32,19 @@
     </header>
     <main>
         <div class="page-text">
-            <h1>Escolha seu plano</h1>
+            <h1>Conheça nossos planos</h1>
             <h4>Sem compromisso, cancele quando quiser</h4>
+            <a href="#page-plans-container" class="scroll-link">
+                <button type="button">Quero assinar agora</button>
+            </a>
         </div>
-        <div class="page-plans">
+        <div class="page-plans" id="page-plans-container">
             <div class="first-plan-container plan-card">
                 <h4 class="card-title">Gratuito</h4>
                 <h4 class="card-price">R$ 0</h4>
                 <h5 class="card-subtitle">Ideal para Iniciantes</h5>
                 <div class="button-container">
-                    <button type="button" style="background: #63f02b;">Cadastre-se Gratuitamente</button>
+                    <button type="button" style="background: transparent; color: #000;border: 1px solid #ccc;">Cadastre-se Gratuitamente</button>
                 </div>
                 <ul style="list-style: none;">
                     <li><i class="bi bi-check"></i>Triagem básica de currículos</li>
@@ -65,7 +68,10 @@
                     <li><i class="bi bi-check"></i>Acesso a webinars e recursos educacionais básicos</li>
                 </ul>
             </div>
-            <div class="three-plan-container plan-card">
+            <div class="three-plan-container plan-card premium-card">
+                <div class="premium-icon">
+                    <i class="bi bi-bookmark-star-fill"></i>
+                </div>
                 <h4 class="card-title">Premium</h4>
                 <h4 class="card-price">R$ 99/mês</h4>
                 <h5 class="card-subtitle">Avançado para Recrutamento Eficiente  </h5>
@@ -99,6 +105,6 @@
             </div>
         </div>
     </main>
-    <footer></footer>
+    <script src="/src/js/script.js"></script>
 </body>
 </html>

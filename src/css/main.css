@@ -3,18 +3,20 @@
 }
 
 main {
-    background: #2bf076;
+    background: #fff;
     height: 850px;
 }
 
 main .page-text {
-    height: 30%;
-    background: #2bf076;
+    height: 400px;
+    background-image: url('../../assets/img/header-background.png');
+    background-repeat: no-repeat;
     font-family: Roboto-Light;
     display: flex;
+    color: white;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    padding-left: 5rem;
 }
 
 main .page-text h1 {
@@ -28,9 +30,38 @@ main .page-text h4 {
     margin-top: 20px;  
 }
 
+main .page-text button {
+    width: 200px;
+    height: 70px;
+    background: transparent;
+    border-radius: 10px;
+    border: 2px solid white;
+    cursor: pointer;
+    font-family: Roboto;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+main .page-text a {
+    width: 200px;
+    margin-top: 30px;
+    height: 70px;
+    text-decoration: none;
+    color: black;
+}
+
+main .page-text button:hover {
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    background: white;
+    color: #1EA358;
+
+}
+
 main .page-plans {
-    background: #2bf076;
-    height: 60%;
+    padding: 50px 0px;
+    background: white;
+    height: 70%;
     width: 100%;
     display: inline-flex;
     align-items: start;
@@ -39,6 +70,7 @@ main .page-plans {
 
 main .page-plans .plan-card {
     height: 550px;
+    border: 1px solid #ccc;
     width: 350px;
     display: flex;
     flex-direction: column;
@@ -94,8 +126,8 @@ main .page-plans .plan-card .button-container button {
 }
 
 main .page-plans .plan-card .button-container button:hover {
-    animation:shadow-pop-bl-green .3s cubic-bezier(.47,0.000,.745,.715) both
-
+    animation:shadow-pop-bl-green .3s cubic-bezier(.47,0.000,.745,.715) both;
+    background-color: #05D80A;
 }
 
 main .page-plans .plan-card ul {
@@ -110,4 +142,26 @@ main .page-plans .plan-card ul li {
 
 main .page-plans .plan-card ul li i {
     margin-right: 5px;
+}
+
+main .page-plans .plan-card .premium-icon i {
+    font-size: 20px;
+    color: #1EA358;
+}
+
+main .page-plans .plan-card .premium-icon {
+    position: absolute;
+    margin-top: 10px;
+    margin-right: 10px;
+    top: 0;
+    right: 0;
+}
+
+main .page-plans .premium-card {
+    position: relative;
+}
+
+main .page-plans .premium-card {
+    border: 5px solid #1EA358;
+    
 }
