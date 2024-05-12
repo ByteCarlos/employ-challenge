@@ -34,3 +34,14 @@
         transform-origin: 50% 50%;
     }
 }
+
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}

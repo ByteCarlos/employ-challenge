@@ -1,3 +1,117 @@
 * {
     margin: 0;
 }
+
+main {
+    background: antiquewhite;
+    height: 1000px;
+}
+
+main .page-text {
+    height: 30%;
+    background: #2bf076;
+    font-family: Roboto-Light;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .page-text h1 {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+main .page-text h4 {
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 20px;  
+}
+
+main .page-plans {
+    background: #2bf076;
+
+    height: 60%;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .page-plans .plan-card {
+    height: 500px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: white;
+    font-family: Roboto-Light;
+}
+
+main .page-plans .plan-card:hover {
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+main .page-plans .plan-card:not(:last-child) {
+    margin-right: 4rem; 
+}
+
+main .page-plans .plan-card .card-title {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+main .page-plans .plan-card .card-price {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+main .page-plans .plan-card .card-subtitle {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+main .page-plans .plan-card .button-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+main .page-plans .plan-card .button-container button {
+    height: 60px;
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    background: #2bf076;
+    color: white;
+    font-family: Roboto;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+main .page-plans .plan-card .button-container button:hover {
+    animation:shadow-pop-bl-green .3s cubic-bezier(.47,0.000,.745,.715) both
+
+}
+
+main .page-plans .plan-card ul {
+    padding-right: 2rem;
+}
+
+main .page-plans .plan-card ul li {
+    font-size: 14px;
+}
+
+main .page-plans .plan-card ul li i {
+    margin-right: 5px;
+}
+
+main .white-container {
+    height: 50%;
+    background: white;
+}
