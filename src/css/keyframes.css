@@ -1,0 +1,36 @@
+@keyframes shadow-pop-bl-gray {
+    0% {
+        box-shadow: 0 0 #a3a3a3, 0 0 #a3a3a3, 0 0 #a3a3a3, 0 0 #a3a3a3;
+        transform: translateX(0) translateY(0)
+    }
+
+    100% {
+        box-shadow: -1px 1px #a3a3a3, -2px 2px #a3a3a3, -3px 3px #a3a3a3, -4px 4px #a3a3a3;
+        transform: translateX(4px) translateY(-4px)
+    }
+}
+
+@keyframes shadow-pop-bl-green {
+    0% {
+        box-shadow: 0 0 #43a31d, 0 0 #43a31d, 0 0 #43a31d, 0 0 #43a31d, 0 0 #43a31d;
+        transform: translateX(0) translateY(0)
+    }
+
+    100% {
+        box-shadow: -1px 1px #43a31d, -2px 2px #43a31d, -3px 3px #43a31d, -4px 4px #43a31d;
+        transform: translateX(4px) translateY(-4px)
+    }
+}
+
+
+@keyframes text-pop-up-top {
+    0% {
+        transform: translateY(0);
+        transform-origin: 50% 50%;
+    }
+
+    100% {
+        transform: translateY(-4px);
+        transform-origin: 50% 50%;
+    }
+}

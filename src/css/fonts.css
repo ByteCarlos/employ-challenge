@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Roboto;
+    src: url('../../assets/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Mont;
+    src: url('../../assets/fonts/Mont/Mont-Black.otf') format('opentype');
+}

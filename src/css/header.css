@@ -1,0 +1,91 @@
+/* header links */
+header {
+    display: inline-flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+}
+
+header .header-links-container {
+    display: inline-flex;
+    align-items: center;
+    width: 40%;
+    margin-left: 10%;
+}
+
+header .header-links-container .header-logo-container {
+    width: 15%;
+    text-align: center;
+}
+
+header .header-links-container .header-logo-container img {
+    height: 50px;
+    width: 110px;
+}
+
+
+header .header-links-container nav {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 85%;
+}
+
+header .header-links-container nav a {
+    text-decoration: none;
+    color: black;
+    font-family: Roboto;
+}
+
+header .header-links-container nav a:hover {
+    color: #1EA358;
+}
+
+/* header buttons */
+
+header .header-buttons-container {
+    width: 40%;
+    margin-right: 10%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: end;
+}
+
+header .header-buttons-container a {
+    text-decoration: none;
+    color: black;
+    font-family: Roboto;
+    margin-right: 15px;
+}
+
+header .header-buttons-container a:hover {
+    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+header .header-buttons-container button {
+    height: 40px;
+    width: 120px;
+    font-family: Roboto;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header .header-buttons-container .login-button {
+    background: transparent;
+}
+
+header .header-buttons-container .login-button:hover {
+    animation:shadow-pop-bl-gray .3s cubic-bezier(.47,0.000,.745,.715) both
+}
+
+header .header-buttons-container .sign-up-button:hover {
+    animation:shadow-pop-bl-green .3s cubic-bezier(.47,0.000,.745,.715) both
+}
+
+header .header-buttons-container .sign-up-button {
+    background-color: #1EA358;
+    border: none;
+    color: white;
+}
