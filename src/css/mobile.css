@@ -1,0 +1,24 @@
+@media screen and (max-width: 968px) {  
+    main {
+        height: auto;
+    }
+
+    main .page-plans {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .page-plans .plan-card {
+        margin: 50px 0px;
+    }
+
+    header .header-links-container nav,
+    header .header-buttons-container {
+        display: none;
+    }
+
+    header .mobile-menu-container {
+        display: flex;
+    }
+}

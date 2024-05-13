@@ -85,7 +85,7 @@ main .page-plans .plan-card:hover {
 }
 
 main .page-plans .plan-card:not(:last-child) {
-    margin-right: 4rem; 
+    margin-right: 20px; 
 }
 
 main .page-plans .plan-card .card-title {
