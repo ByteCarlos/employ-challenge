@@ -84,20 +84,73 @@ header .mobile-menu-container i {
     cursor: pointer;
 }
 
-header .header-buttons-container .login-button {
+header .header-buttons-container .login-button,
+header .mobile-menu-items-container .login-button {
     background: transparent;
 }
 
-header .header-buttons-container .login-button:hover {
+header .header-buttons-container .login-button:hover,
+header .mobile-menu-items-container .login-button:hover {
     animation:shadow-pop-bl-gray .3s cubic-bezier(.47,0.000,.745,.715) both
 }
 
-header .header-buttons-container .sign-up-button:hover {
+header .header-buttons-container .sign-up-button:hover,
+header .mobile-menu-items-container .sign-up-button:hover {
     animation:shadow-pop-bl-green .3s cubic-bezier(.47,0.000,.745,.715) both
 }
 
-header .header-buttons-container .sign-up-button {
+header .header-buttons-container .sign-up-button,
+header .mobile-menu-items-container .sign-up-button {
     background-color: #1EA358;
     border: none;
     color: white;
+}
+
+header .mobile-menu-items-container i {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+header .mobile-menu-items-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: white;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header .animate-left {
+    animation: scale-up-hor-right 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+header .animate-right {
+    animation: scale-down-hor-right 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+header .mobile-menu-items-container a {
+    text-decoration: none;
+    color: black;
+    font-family: Roboto;
+}
+
+header .mobile-menu-items-container button {
+    height: 40px;
+    width: 120px;
+    font-family: Roboto;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header .mobile-menu-container .hide-menu,
+header .mobile-menu-items-container .hide-menu {
+    background: transparent;
+    border: none;
 }

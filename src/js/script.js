@@ -14,3 +14,19 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+function showMenu() {
+    var div = document.getElementById('menu-items');
+
+    if (div.classList.contains('animate-left')) {
+        div.classList.remove('animate-left');
+        document.body.style.overflow = 'auto';
+        div.classList.add('animate-right');
+    } else {
+        div.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+        div.classList.remove('animate-right');
+        div.classList.add('animate-left');
+    }
+}
+
